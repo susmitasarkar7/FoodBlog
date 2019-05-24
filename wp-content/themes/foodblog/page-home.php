@@ -18,12 +18,22 @@ get_header();
 				<h2>Latest recipes</h2>
 			</div>
 			<div class="row">
+
+					<?php $loop = new WP_Query( array( 'post_type' => 'latest_recipe', 
+					'orderby' => 'post_id', 'order' => 'ASC'));?>
+
+					<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
+
 				<div class="col-lg-4 col-md-6">
 					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/1.jpg" alt="">
+						<?php 
+							if(has_post_thumbnail()) { //check for the feature image
+								the_post_thumbnail( array(  ) );
+							}
+						?>
 						<div class="recipe-info-warp">
 							<div class="recipe-info">
-								<h3>Traditional Pizza</h3>
+								<h3><?php the_title(); ?></h3>
 								<div class="rating">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -35,92 +45,8 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-md-6">
-					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/2.jpg" alt="">
-						<div class="recipe-info-warp">
-							<div class="recipe-info">
-								<h3>Italian home-made pasta</h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/3.jpg" alt="">
-						<div class="recipe-info-warp">
-							<div class="recipe-info">
-								<h3>Chesse Cake Tart</h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/4.jpg" alt="">
-						<div class="recipe-info-warp">
-							<div class="recipe-info">
-								<h3>Traditional Pizza</h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/5.jpg" alt="">
-						<div class="recipe-info-warp">
-							<div class="recipe-info">
-								<h3>Italian home-made pasta</h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="recipe">
-						<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/recipes/6.jpg" alt="">
-						<div class="recipe-info-warp">
-								<div class="recipe-info">
-								<h3>Chesse Cake Tart</h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+				<?php endwhile; wp_reset_query(); ?>
 		</div>
 	</section>
 	<!-- Recipes section end -->
