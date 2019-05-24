@@ -3,13 +3,6 @@
  * Template Name : Home Page
  */
 
-//Hero Slider
-// $image_1 = get_field('image_1');
-// $image_2 = get_field('image_2');
-// $title_1 = get_field('title_1');
-// $title_2 = get_field('title_2');
-// $title_3 = get_field('title_3');
-
 // Amazing deserts
 $amazing_deserts_title = get_field('amazing_deserts_title');
 $amazing_deserts_description_1 = get_field('desc_1');
@@ -32,24 +25,18 @@ get_header();
 
 			<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-			<div class="hero-slide-item set-bg" data-setbg="<?php the_field('hero_slider_image'); ?>">
+			<div class="hero-slide-item set-bg" data-setbg="
+			<?php echo get_field('hero_slider_image')['url']; ?>
+			">
 			<div class="hs-text">
-				<h2 class="hs-title-1"><span><?php the_field('title_1')?></span></h2>
-				<h2 class="hs-title-2"><span><?php echo $title_2; ?></span></h2>
-				<h2 class="hs-title-3"><span><?php echo $title_3; ?></span></h2>
+				<h2 class="hs-title-1"><span><?php the_field('title_1'); ?></span></h2>
+				<h2 class="hs-title-2"><span><?php the_field('title_2'); ?></span></h2>
+				<h2 class="hs-title-3"><span><?php the_field('title_3'); ?></span></h2>
 			</div>
 			</div>
 
 			<?php endwhile; ?>
 
-			
-			<!-- <div class="hero-slide-item set-bg" data-setbg="<?php echo $image_1['url']; ?>">
-				<div class="hs-text">
-					<h2 class="hs-title-1"><span><?php echo $title_1; ?></span></h2>
-					<h2 class="hs-title-2"><span><?php echo $title_2; ?></span></h2>
-					<h2 class="hs-title-3"><span><?php echo $title_3; ?></span></h2>
-				</div>
-			</div> -->
 		</div>
 	</section>
 	<!-- Hero section end -->
