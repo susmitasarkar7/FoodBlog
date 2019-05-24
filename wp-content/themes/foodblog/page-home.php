@@ -3,55 +3,15 @@
  * Template Name : Home Page
  */
 
-
 get_header();
 ?>
 
 	<?php get_template_part( 'template-parts/content', 'hero' ); ?>	
 
-	<?php get_template_part( 'template-parts/content', 'adeserts' ); ?>	
-
-	<!-- Recipes section -->
-	<section class="recipes-section spad pt-0">
-		<div class="container">
-			<div class="section-title">
-				<h2>Latest recipes</h2>
-			</div>
-			<div class="row">
-
-					<?php $loop = new WP_Query( array( 'post_type' => 'latest_recipe', 
-					'orderby' => 'post_id', 'order' => 'ASC'));?>
-
-					<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-
-				<div class="col-lg-4 col-md-6">
-					<div class="recipe">
-						<?php 
-							if(has_post_thumbnail()) { //check for the feature image
-								the_post_thumbnail( array(  ) );
-							}
-						?>
-						<div class="recipe-info-warp">
-							<div class="recipe-info">
-								<h3><?php the_title(); ?></h3>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star is-fade"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<?php endwhile; wp_reset_query(); ?>
-		</div>
-	</section>
-	<!-- Recipes section end -->
-
-
+	<?php get_template_part( 'template-parts/content', 'amazingDeserts' ); ?>	
+	
+	<?php get_template_part( 'template-parts/content', 'latestReceipies' ); ?>	
+	
 	<!-- Footer widgets section -->
 	<section class="bottom-widgets-section spad">
 		<div class="container">
@@ -211,6 +171,9 @@ get_header();
 					</ul>
 				</div>
 				<div class="col-lg-4">
+					<aside>
+						<?php dynamic_sidebar('sidebar-2'); ?>
+					</aside>
 					<div class="sp-blog-item">
 						<div class="blog-thubm">
 							<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/blog/1.jpg" alt="">
@@ -294,12 +257,19 @@ get_header();
 	<!-- Gallery section -->
 	<div class="gallery">
 		<div class="gallery-slider owl-carousel">
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/1.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/2.jpg"></div>
+		<?php $loop = new WP_Query( array( 'post_type' => 'gallery', 'posts_per_page' => $recipesLength,
+            'orderby' => 'post_id', 'order' => 'ASC'));?>
+
+			<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
+						
+			<div class="gs-item set-bg" data-setbg="<?php echo get_the_post_thumbnail_url( $page->ID, 'thumbnail', 'style=max-width:100%;height:auto;' ); ?>"></div>
+
+			<?php endwhile; wp_reset_query(); ?>
+			<!-- <div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/2.jpg"></div>
 			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/3.jpg"></div>
 			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/4.jpg"></div>
 			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/5.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/6.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/6.jpg"></div> -->
 		</div>
 	</div>
 	<!-- Gallery section end -->

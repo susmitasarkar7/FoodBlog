@@ -1,19 +1,18 @@
 <?php
 /**
- * Template Name : Home Page
+ * Template Name : Feature Page
  */
 
 get_header();
 ?>
 
 <!-- Hero section -->
-<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+<section class="page-top-section set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/page-top-bg.jpg">
 		<div class="container">
-			<h2>About us</h2>
+			<h2><?php the_title(); ?></h2>
 		</div>
 	</section>
 	<!-- Hero section end -->
-
 
 	<!-- Search section -->
 	<div class="search-form-section">
@@ -52,7 +51,7 @@ get_header();
 					<div class="site-btn">Read more</div>
 				</div>
 				<div class="col-lg-6">
-					<img src="img/about.jpg" alt="">
+					<img src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/about.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -67,28 +66,28 @@ get_header();
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 fact-item">
 						<div class="fact-icon">
-							<img src="img/icon/1.png" alt="">
+							<img src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/icon/1.png" alt="">
 						</div>
 						<h2>1287</h2>
 						<p>Amazing receipies</p>
 					</div>
 					<div class="col-lg-3 col-sm-6 fact-item">
 						<div class="fact-icon">
-							<img src="img/icon/2.png" alt="">
+							<img src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/icon/2.png" alt="">
 						</div>
 						<h2>25</h2>
 						<p>Wine pairings</p>
 					</div>
 					<div class="col-lg-3 col-sm-6 fact-item">
 						<div class="fact-icon">
-							<img src="img/icon/3.png" alt="">
+							<img src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/icon/3.png" alt="">
 						</div>
 						<h2>471</h2>
 						<p>Meat receipies</p>
 					</div>
 					<div class="col-lg-3 col-sm-6 fact-item">
 						<div class="fact-icon">
-							<img src="img/icon/4.png" alt="">
+							<img src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/icon/4.png" alt="">
 						</div>
 						<h2>326</h2>
 						<p>Desert receipies</p>
@@ -113,7 +112,7 @@ get_header();
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. </p>
 				</div>
 				<div class="col-lg-6">
-					<img class="nl-sp-img" src="img/newslatter.png" alt="">
+					<img class="nl-sp-img" src="<?php bloginfo('stylesheet_directory') ;?>/assets/img/newslatter.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -124,12 +123,12 @@ get_header();
 	<!-- Gallery section -->
 	<div class="gallery">
 		<div class="gallery-slider owl-carousel">
-			<div class="gs-item set-bg" data-setbg="img/instagram/1.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="img/instagram/2.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="img/instagram/3.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="img/instagram/4.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="img/instagram/5.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="img/instagram/6.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/1.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/2.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/3.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/4.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/5.jpg"></div>
+			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/instagram/6.jpg"></div>
 		</div>
 	</div>
 	<!-- Gallery section end -->
