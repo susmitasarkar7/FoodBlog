@@ -35,7 +35,7 @@ get_header();
 			</div>
 			</div>
 
-			<?php endwhile; ?>
+			<?php endwhile; wp_reset_query(); ?>
 
 		</div>
 	</section>
