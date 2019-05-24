@@ -52,6 +52,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-3.2.1.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <?php wp_footer(); ?>
 

@@ -66,7 +66,7 @@
 		</div>
 		<div class="header-bottom">
 			<div class="container">
-				<a href="index.html" class="site-logo">
+				<a href="#!" class="site-logo">
 					<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/logo.png" alt="">
 				</a>
 				<div class="nav-switch">
@@ -79,9 +79,12 @@
 				<?php 
 					wp_nav_menu(array(
 
-						'theme-location' => 'primary',
-						'container' => 'ul',
-						'menu_class' => 'main-menu',
+						'theme-location'  => 'primary',
+						'depth'	          => 2,
+						'container' 	  => 'ul',
+						'menu_class'	  => 'main-menu',
+						'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'          => new WP_Bootstrap_Navwalker(),
 
 					));
 				?>

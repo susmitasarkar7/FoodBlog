@@ -72,7 +72,7 @@ textarea:focus {
 a:hover,
 a:focus {
 	text-decoration: none;
-	outline: none;
+	outline: none !important;
 }
 
 ul,
@@ -270,7 +270,9 @@ ol {
 .nav-switch {
 	display: none;
 }
-
+.open>.dropdown-menu {
+    display: block;
+}
 .main-menu,
 .footer-menu {
 	list-style: none;
@@ -1484,7 +1486,8 @@ ol {
 		position: absolute;
 		background: #fff;
 		width: 100%;
-		left: 0;
+		left: -49px;
+		/* left: 0; */
 		top: 100%;
 		z-index: 999;
 	}
