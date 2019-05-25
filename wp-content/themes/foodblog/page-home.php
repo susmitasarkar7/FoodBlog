@@ -253,26 +253,7 @@ get_header();
 	</section>
 	<!-- Review section end -->
 
-
-	<!-- Gallery section -->
-	<div class="gallery">
-		<div class="gallery-slider owl-carousel">
-		<?php $loop = new WP_Query( array( 'post_type' => 'gallery', 'posts_per_page' => $recipesLength,
-            'orderby' => 'post_id', 'order' => 'ASC'));?>
-
-			<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
-						
-			<div class="gs-item set-bg" data-setbg="<?php echo get_the_post_thumbnail_url( $page->ID, 'thumbnail', 'style=max-width:100%;height:auto;' ); ?>"></div>
-
-			<?php endwhile; wp_reset_query(); ?>
-			<!-- <div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/2.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/3.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/4.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/5.jpg"></div>
-			<div class="gs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory')?>/assets/img/instagram/6.jpg"></div> -->
-		</div>
-	</div>
-	<!-- Gallery section end -->
+	<?php get_template_part( 'template-parts/content', 'gallery' ); ?>	
 
 <?php
 get_footer();
