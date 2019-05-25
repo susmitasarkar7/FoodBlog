@@ -171,9 +171,9 @@ get_header();
 					</ul>
 				</div>
 				<div class="col-lg-4">
-					<aside>
+					<!-- <aside>
 						<?php dynamic_sidebar('sidebar-2'); ?>
-					</aside>
+					</aside> -->
 					<div class="sp-blog-item">
 						<div class="blog-thubm">
 							<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/blog/1.jpg" alt="">
