@@ -481,7 +481,7 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	/* margin: 0 0 1.5em 3em; */
 }
 
 ul {
@@ -574,10 +574,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	/* color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	padding: 3px;
+	padding: 3px; */
 }
 
 input[type="text"]:focus,

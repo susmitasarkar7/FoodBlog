@@ -29,15 +29,26 @@
 					</div>
 				</div>
 				<div class="col-lg-6 text-lg-right">
-					<ul class="footer-menu">
+
+					<?php 
+					wp_nav_menu(array(
+
+						'theme-location'  => 'footer',
+						'container' 	  => 'ul',
+						'menu_class'	  => 'footer-menu',
+
+					));
+				?>
+
+					<!-- <ul class="footer-menu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Features</a></li>
 						<li><a href="#">Receipies</a></li>
 						<li><a href="#">Reviews</a></li>
 						<li><a href="#">Contact</a></li>
-					</ul>
+					</ul> -->
 					<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<?php echo date('Y') ?> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i><br> by <?php the_author_link();?>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 				</div>
