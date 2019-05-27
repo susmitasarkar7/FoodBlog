@@ -171,22 +171,35 @@ get_header();
 					</ul>
 				</div>
 				<div class="col-lg-4">
-					<!-- <aside>
-						<?php dynamic_sidebar('sidebar-2'); ?>
-					</aside> -->
+
+				<?php 
+					$recentPost = query_posts([
+							'orderby' => 'post_id',
+							'order' => 'DESC',
+							'posts_per_page' => 0 
+					]);
+					// var_dump($recentPost[0]);
+				?>
+			
 					<div class="sp-blog-item">
 						<div class="blog-thubm">
 							<img src="<?php bloginfo('stylesheet_directory')?>/assets/img/blog/1.jpg" alt="">
 							<div class="blog-date">
-								<span>May 04, 2018</span>
+								<span>
+									<?php 
+										$date= $recentPost[0]->post_date;
+										$date= strtotime($date);
+										echo date('F j, Y', $date);
+									?>
+								</span>
 							</div>
 						</div>
 						<div class="blog-text">
-							<h5>Italian restaurant Review</h5>
-							<span>By Maria Williams</span>
-							<p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim. </p>
-							<a href="#" class="comment">2 Comments</a>
-							<a href="#" class="readmore"><i class="fa fa-angle-right"></i></a>
+							<h5><?= $recentPost[0]->post_title; ?></h5>
+							<span>By <?= $recentPost[0]->post_author; ?></span>
+							<p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim.</p>
+							<a href="#" class="comment"><?= $recentPost[0]->comment_count; ?> Comments</a>
+							<a href="<?= $recentPost[0]->guid;?>" class="readmore"><i class="fa fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
