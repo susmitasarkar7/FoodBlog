@@ -81,6 +81,22 @@ ol {
 	margin: 0;
 }
 
+#comments {
+	padding: 30px;
+}
+
+#secondary section, aside section {
+	background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+#secondary section ul li, aside section ul li {
+	list-style: none;
+	padding: 10px;
+	background: #eff3f7;
+}
+
 /*---------------------
 	Helper CSS
 -----------------------*/

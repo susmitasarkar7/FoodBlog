@@ -10,6 +10,13 @@
 get_header();
 ?>
 
+<section class="page-top-section set-bg"
+	data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/page-top-bg.jpg">
+	<div class="container">
+		<h2>Blog</h2>
+	</div>
+</section>
+
 <section class="bottom-widgets-section spad">
 	<div class="container">
 		<div class="row">

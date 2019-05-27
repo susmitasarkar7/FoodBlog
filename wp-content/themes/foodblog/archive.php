@@ -10,44 +10,59 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+<section class="page-top-section set-bg"
+	data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/page-top-bg.jpg">
+	<div class="container">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		<?php
+					the_archive_title( '<h2 class="page-title">', '</h2>' );
+					the_archive_description( '<small class="archive-description">', '</small>' );
+					?>
+	</div>
+</section>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+<section class="bottom-widgets-section spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="sp-blog-item">
+					<?php
+								/* Start the Loop */
+								while ( have_posts() ) :
+									the_post();
 
-			endwhile;
+									/*
+									* Include the Post-Type-specific template for the content.
+									* If you want to override this in a child theme, then include a file
+									* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+									*/
+									get_template_part( 'template-parts/content', get_post_type() );
 
-			the_posts_navigation();
+								endwhile;
 
-		else :
+								the_posts_navigation();
 
-			get_template_part( 'template-parts/content', 'none' );
+							else :
 
-		endif;
-		?>
+								get_template_part( 'template-parts/content', 'none' );
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+							endif;
+							?>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<aside>
+					<?php get_sidebar(); ?>
+					<?php dynamic_sidebar('sidebar-2'); ?>
+				</aside>
+			</div>
+
+		</div>
+	</div>
+</section>
 
 <?php
-get_sidebar();
 get_footer();
