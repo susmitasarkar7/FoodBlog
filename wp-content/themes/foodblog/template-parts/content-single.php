@@ -1,13 +1,3 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Food_BLog
- */
-
-?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -32,7 +22,7 @@
 				?>
 			
 				<span>By <?php the_author(); ?></span>
-				<p><?php the_excerpt(); ?></p>
+				<p><?php the_content(); ?></p>
 				<i class="fa fa-comments"></i>&nbsp; <a href="<?php comments_link(); ?>"><?php comments_number(0, 1, '%'); ?>&nbsp; Comments</a>
 				<i class="fa fa-folder"></i>&nbsp; <?php the_category(', '); ?>
 				<i class="fa fa-tags"></i>&nbsp; <?php the_tags('', ', ', ''); ?>
