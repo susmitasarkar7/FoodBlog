@@ -1,3 +1,105 @@
-body .login {
-    background-color: aquamarine;
+body.login {
+    background-color: transparent;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+body.login div#login {
+    background-color: rgba(6, 6, 6, 0.25);
+    padding: 40px 30px; 
+    border-radius: 15px;
+    box-shadow: -3px 7px 35px 1px rgba(0,0,0,.8);
+}
+@media screen and (min-width:768px) {
+    body.login div#login {
+        width: 700px;
+        margin: auto;
+        position: absolute;
+        top: 0;left: 0;bottom: 0;right: 0;
+        height: 330px;
+    }
+}
+@media screen and (min-width:768px) {
+    body.login div#login h1 {
+        display: inline-block;
+        width: 50%;
+        margin-top: 100px;
+    }
+}
+body.login div#login h1 a {
+    background-image: url(../img/logo.png);
+    background-size: 60%;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+}
+body.login div#login form#loginform {
+    float: right;
+}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {
+    border: 1px solid #ff2a6b;
+}
+body.login div#login form#loginform input#user_pass {
+    border: 1px solid #ff2a6b;
+}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+    border: 1px solid #ff2a6b;
+}
+body.login div#login form#loginform p.forgetmenot input[type=checkbox]:checked:before{
+    color: #ff2a6b;
+}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {
+    background: #ff2a6b;
+    border-color: #ff2a6b;
+    box-shadow: 0 1px 0 #ff2a6b;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #ff2a6b, 1px 0 1px #ff2a6b, 0 1px 1px #ff2a6b, -1px 0 1px #ff2a6b;
+}
+body.login div#login p#nav {
+    text-align: center;
+}
+@media screen and (min-width:768px) {   
+    body.login div#login p#nav {
+       display: inline;
+    }
+}
+body.login div#login p#nav a {
+    color: #fafafa;
+}
+@media screen and (min-width:768px) {   
+    body.login div#login p#backtoblog {
+       display: inline;
+       float: right;
+       margin: 0;
+    }
+}
+body.login div#login p#backtoblog {
+    text-align: center;
+}
+body.login div#login p#backtoblog a {
+    color: #fafafa;
+}
+#login_error {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+.group {
+    margin-bottom: 20px;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
 }
