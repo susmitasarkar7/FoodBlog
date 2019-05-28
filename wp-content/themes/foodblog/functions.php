@@ -190,3 +190,16 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+/**
+ * Login Page
+*/
+
+function admin_styles() {
+	wp_enqueue_style('loginCSS', get_template_directory_uri(). '/login/css/loginStyles.css', false);
+
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('loginjs', get_template_directory_uri(). '/login/js/login.js', array('jquery'), '3.2.1', true);
+}
+
+add_action('login_enqueue_scripts', 'admin_styles', 10);
