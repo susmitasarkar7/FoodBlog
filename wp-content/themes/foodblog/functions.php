@@ -213,3 +213,70 @@ function admin_styles() {
 }
 
 add_action('login_enqueue_scripts', 'admin_styles', 10);
+
+// Dashboard
+function myprefix_theme_enqueue_styles() {
+	wp_enqueue_style( 'foodblog', get_template_directory_uri() . '/assets/css/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'myprefix_theme_enqueue_styles' );
+
+// remove links/menus from the admin bar
+function mytheme_admin_bar_render() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('wp-logo');
+}
+add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+function modify_admin_bar( $wp_admin_bar ){
+  // do something with $wp_admin_bar;
+}
+
+// Remove dashboard widgets
+function remove_dashboard_meta() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_primary', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+		remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+		remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
+	}
+}
+add_action( 'admin_init', 'remove_dashboard_meta' ); 
+
+// Create the function to use in the action hook
+function wpexplorer_remove_dashboard_widget () {
+    remove_meta_box ( 'dashboard_quick_press', 'dashboard', 'side' );
+	remove_meta_box( 'dashboard_primary', 'dashboard', 'side');
+}
+add_action ('wp_dashboard_setup', 'wpexplorer_remove_dashboard_widget');
+
+//add widgets to the dashboard
+add_action('wp_dashboard_setup', 'custom_dashboard_widgets'); 
+function custom_dashboard_widgets() {
+global $wp_meta_boxes;
+wp_add_dashboard_widget('custom_contact_widget', 'Theme Support', 'custom_dashboard_contact');
+}
+function custom_dashboard_contact() {
+// Widget Content Here
+echo '<p>Welcome to your site! Need help? Contact me <a href="mailto:youremail@yourdomain.com">here</a>. </p>';
+}
+
+//remove menus from dashboard
+function remove_menus(){
+	remove_menu_page( 'themes.php' );          // Appearance
+	remove_menu_page( 'plugins.php' );         // Plugins
+	remove_menu_page( 'users.php' );           // Users
+	remove_menu_page( 'tools.php' );           // Tools
+	remove_menu_page( 'options-general.php' ); // Settings
+}
+add_action( 'admin_menu', 'remove_menus' );
+
+// Custom Admin footer
+function wpexplorer_remove_footer_admin () {
+	echo '<span id="footer-thankyou">Built with love by <a href="http://www.wpexplorer.com/" target="_blank">Susmita Sarkar</a></span>';
+}
+add_filter( 'admin_footer_text', 'wpexplorer_remove_footer_admin' );
