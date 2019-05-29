@@ -278,3 +278,6 @@ function wpexplorer_remove_footer_admin () {
 	echo '<span id="footer-thankyou">Built with love by <a href="http://www.wpexplorer.com/" target="_blank">Susmita Sarkar</a></span>';
 }
 add_filter( 'admin_footer_text', 'wpexplorer_remove_footer_admin' );
+
+// Customizer File
+require get_template_directory(). '/inc/custom-customizer.php';

@@ -17,7 +17,7 @@
 
 ?>
 
-<form methos="post">
+<!-- <form methos="post">
     <input class="input" type="radio" name="format"  value="json" checked>
     <label class="txt1">Json Format:</label>
     
@@ -29,4 +29,4 @@
 
     <button class="DBP_form-btn" type="submit" name="export">Save</button>
     https://youtu.be/L5WW-m8JcE8
-</form>
+</form> -->

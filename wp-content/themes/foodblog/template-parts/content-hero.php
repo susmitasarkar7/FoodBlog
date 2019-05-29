@@ -11,7 +11,7 @@
 			<?php echo get_field('hero_slider_image')['url']; ?>
 			">
 			<div class="hs-text">
-				<h2 class="hs-title-1"><span><?php the_field('title_1'); ?></span></h2>
+				<h2 class="hs-title-1"><span><?php echo get_theme_mod('showcase_heading_1', 'Healthy Recipes'); ?></span></h2>
 				<h2 class="hs-title-2"><span><?php the_field('title_2'); ?></span></h2>
 				<h2 class="hs-title-3"><span><?php the_field('title_3'); ?></span></h2>
 			</div>
