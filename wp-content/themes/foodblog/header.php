@@ -58,10 +58,20 @@
 					<a href="#"><i class="fa fa-behance"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
 				</div>
-				<div class="user-panel">
+				<?php 
+					wp_nav_menu(array(
+
+						'menu'           => 'Topheader',
+						'theme-location'  => 'topheader',
+						'container' 	  => 'div',
+						'container_class'	  => 'user-panel',
+
+					));
+				?>
+				<!-- <div class="user-panel">
 					<a href="#">Register</a> / 
 					<a href="#">Login</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="header-bottom">
@@ -79,23 +89,17 @@
 				<?php 
 					wp_nav_menu(array(
 
+						'menu'           => 'Primary',
 						'theme-location'  => 'primary',
 						'depth'	          => 2,
 						'container' 	  => 'ul',
 						'menu_class'	  => 'main-menu',
-						'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-						'walker'          => new WP_Bootstrap_Navwalker(),
+						// 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+						// 'walker'          => new WP_Bootstrap_Navwalker(),
 
 					));
 				?>
 
-				<!-- <ul class="main-menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">Features</a></li>
-					<li><a href="recipes.html">Receipies</a></li>
-					<li><a href="#">Reviews</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul> -->
 			</div>
 		</div>
 	</header>
