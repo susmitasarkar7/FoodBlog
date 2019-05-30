@@ -283,6 +283,12 @@ ol {
 	display: inline-block;
 }
 
+.top-menu li {
+	list-style-type: none;
+	display: inline;
+	margin-left: 20px;
+}
+
 .nav-switch {
 	display: none;
 }

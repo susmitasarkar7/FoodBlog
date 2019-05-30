@@ -61,10 +61,11 @@
 				<?php 
 					wp_nav_menu(array(
 
-						'menu'           => 'Topheader',
+						'menu'            => 'Topheader',
 						'theme-location'  => 'topheader',
 						'container' 	  => 'div',
-						'container_class'	  => 'user-panel',
+						'container_class' => 'user-panel',
+						'menu_class'	  => 'top-menu',
 
 					));
 				?>
@@ -94,8 +95,8 @@
 						'depth'	          => 2,
 						'container' 	  => 'ul',
 						'menu_class'	  => 'main-menu',
-						// 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-						// 'walker'          => new WP_Bootstrap_Navwalker(),
+						'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'          => new WP_Bootstrap_Navwalker(),
 
 					));
 				?>
