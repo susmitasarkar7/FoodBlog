@@ -6,8 +6,6 @@
 get_header();
 ?>
 
-
-
 <!-- Hero section -->
 <section class="page-top-section set-bg" data-setbg="<?php bloginfo('stylesheet_directory') ;?>/assets/img/page-top-bg.jpg">
     <div class="container">

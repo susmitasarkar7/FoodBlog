@@ -281,3 +281,13 @@ add_filter( 'admin_footer_text', 'wpexplorer_remove_footer_admin' );
 
 // Customizer File
 require get_template_directory(). '/inc/custom-customizer.php';
+
+//Disable Widgets on decleared pages
+function disable_widgets( $sidebars_widgets )
+{
+	if (is_page(array('my-account','registration','register'))) {
+		$sidebars_widgets['sidebar-1'] = false;
+	}
+	return $sidebars_widgets;
+}
+add_filter( 'sidebars_widgets', 'disable_widgets' );
