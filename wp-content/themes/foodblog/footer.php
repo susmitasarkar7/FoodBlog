@@ -33,7 +33,7 @@
 					<?php 
 					wp_nav_menu(array(
 
-						'menu'           => 'Footer',
+						'menu'           => 'Footer Menu',
 						'theme-location'  => 'footer',
 						'container' 	  => 'ul',
 						'menu_class'	  => 'footer-menu',

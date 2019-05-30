@@ -90,7 +90,7 @@
 				<?php 
 					wp_nav_menu(array(
 
-						'menu'           => 'Primary',
+						'menu'           => 'Main Menu',
 						'theme-location'  => 'primary',
 						'depth'	          => 2,
 						'container' 	  => 'ul',
