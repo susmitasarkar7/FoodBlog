@@ -1,0 +1,285 @@
+0000.032 (0) Opened log file at time: Wed, 12 Jun 2019 06:49:07 +0000 on http://localhost/foodblog
+0000.153 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.14 WP: 5.2.1 PHP: 7.2.12 (apache2handler, Windows NT USER-PC 6.1 build 7601 (Windows 7 Ultimate Edition Service Pack 1) i586) MySQL: 10.1.37-MariaDB WPLANG: en_US Server: Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 38.9M | 20M) multisite: N openssl: OpenSSL 1.1.0i  14 Aug 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.186 (0) Free space on disk containing Updraft's temporary directory: 49139.8 MB
+0000.209 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.235 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.294 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1559215301, seconds_ago=1106846)
+0000.385 (0) Set semaphore last lock (fd) time to 2019-06-12 06:49:07
+0000.410 (0) Semaphore lock (fd) complete
+0000.485 (0) Backup run: resumption=0, nonce=6308ebe3abcd, file_nonce=6308ebe3abcd begun at=1560322147 (0s ago), job type=backup
+0000.553 (0) Scheduling a resumption (1) after 300 seconds (1560322447) in case this run gets aborted
+0000.772 (0) Checking if we have a zip executable available
+0000.935 (0) Creation of backups of directories: beginning
+0000.999 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0006.982 (0) Total entities for the zip file: 828 directories, 5252 files (0 skipped as non-modified), 98.4 MB
+0007.040 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0007.189 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 100 files added (on-disk size: 140 KB)
+0007.262 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 200 files added (on-disk size: 140 KB)
+0007.337 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 300 files added (on-disk size: 140 KB)
+0007.395 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 400 files added (on-disk size: 140 KB)
+0007.457 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 500 files added (on-disk size: 140 KB)
+0007.495 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.3 MB, 5252 files batched, 501 (502) added so far); re-opening (prior size: 140 KB)
+0009.608 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 600 files added (on-disk size: 2952.9 KB)
+0009.678 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 700 files added (on-disk size: 2952.9 KB)
+0009.774 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 800 files added (on-disk size: 2952.9 KB)
+0009.842 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 900 files added (on-disk size: 2952.9 KB)
+0009.901 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1000 files added (on-disk size: 2952.9 KB)
+0009.941 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.9 MB, 5252 files batched, 501 (1003) added so far); re-opening (prior size: 2952.9 KB)
+0011.488 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1100 files added (on-disk size: 5177.1 KB)
+0011.568 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1200 files added (on-disk size: 5177.1 KB)
+0011.645 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1300 files added (on-disk size: 5177.1 KB)
+0011.724 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1400 files added (on-disk size: 5177.1 KB)
+0011.782 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1500 files added (on-disk size: 5177.1 KB)
+0011.820 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.3 MB, 5252 files batched, 501 (1504) added so far); re-opening (prior size: 5177.1 KB)
+0013.004 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1600 files added (on-disk size: 7362.7 KB)
+0013.051 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1700 files added (on-disk size: 7362.7 KB)
+0013.121 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1800 files added (on-disk size: 7362.7 KB)
+0013.167 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 1900 files added (on-disk size: 7362.7 KB)
+0013.234 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2000 files added (on-disk size: 7362.7 KB)
+0013.280 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.6 MB, 5252 files batched, 501 (2005) added so far); re-opening (prior size: 7362.7 KB)
+0014.045 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2100 files added (on-disk size: 9401.6 KB)
+0014.340 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2200 files added (on-disk size: 9401.6 KB)
+0014.440 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2300 files added (on-disk size: 9401.6 KB)
+0014.488 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2400 files added (on-disk size: 9401.6 KB)
+0014.540 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2500 files added (on-disk size: 9401.6 KB)
+0014.580 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.5 MB, 5252 files batched, 501 (2506) added so far); re-opening (prior size: 9401.6 KB)
+0019.080 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2600 files added (on-disk size: 15048.8 KB)
+0019.167 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2700 files added (on-disk size: 15048.8 KB)
+0019.220 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2800 files added (on-disk size: 15048.8 KB)
+0019.327 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 2900 files added (on-disk size: 15048.8 KB)
+0019.470 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3000 files added (on-disk size: 15048.8 KB)
+0019.514 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 5252 files batched, 501 (3007) added so far); re-opening (prior size: 15048.8 KB)
+0022.431 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3100 files added (on-disk size: 15857.6 KB)
+0022.486 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3200 files added (on-disk size: 15857.6 KB)
+0022.557 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3300 files added (on-disk size: 15857.6 KB)
+0022.612 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3400 files added (on-disk size: 15857.6 KB)
+0022.691 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3500 files added (on-disk size: 15857.6 KB)
+0022.712 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.6 MB, 5252 files batched, 501 (3508) added so far); re-opening (prior size: 15857.6 KB)
+0024.831 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3600 files added (on-disk size: 16693.5 KB)
+0024.874 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3700 files added (on-disk size: 16693.5 KB)
+0024.955 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3800 files added (on-disk size: 16693.5 KB)
+0025.018 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 3900 files added (on-disk size: 16693.5 KB)
+0025.073 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (26.2 MB, 5252 files batched, 442 (3950) added so far); re-opening (prior size: 16693.5 KB)
+0028.464 (0) A useful amount of data was added after this amount of zip processing: 3.7 s (normalised: 3.5 s, rate: 7274.2 KB/s)
+0028.510 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.6887309551239, normalised_time=3.5192990402656, max_time=28.461627960205, data points known=1, old_max_bytes=26214400, new_max_bytes=127202233)
+0028.620 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4000 files added (on-disk size: 21707.2 KB)
+0028.677 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4100 files added (on-disk size: 21707.2 KB)
+0028.734 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4200 files added (on-disk size: 21707.2 KB)
+0028.812 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4300 files added (on-disk size: 21707.2 KB)
+0028.883 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4400 files added (on-disk size: 21707.2 KB)
+0028.915 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.8 MB, 5252 files batched, 501 (4451) added so far); re-opening (prior size: 21707.2 KB)
+0029.941 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4500 files added (on-disk size: 23388.6 KB)
+0030.178 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4600 files added (on-disk size: 23388.6 KB)
+0030.368 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4700 files added (on-disk size: 23388.6 KB)
+0030.417 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4800 files added (on-disk size: 23388.6 KB)
+0030.499 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 4900 files added (on-disk size: 23388.6 KB)
+0030.571 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.6 MB, 5252 files batched, 501 (4952) added so far); re-opening (prior size: 23388.6 KB)
+0031.650 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 5000 files added (on-disk size: 24621.5 KB)
+0031.709 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 5100 files added (on-disk size: 24621.5 KB)
+0031.806 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip.tmp: 5200 files added (on-disk size: 24621.5 KB)
+0035.529 (0) Created plugins zip (0) - 29405.2 KB in 34.4 s (854 KB/s) (sha1: cf8066c3b63c4d508a72fa7838baa9a1e4e4cf09, sha256: 0cc1d34204269bae6da95ea2b9f97d6a429f80b5e3dc328c252ad7115caa1afe)
+0035.602 (0) Beginning creation of dump of themes (split every: 400 MB)
+0036.962 (0) Total entities for the zip file: 94 directories, 536 files (0 skipped as non-modified), 15.3 MB
+0037.073 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0037.136 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0037.201 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0037.250 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0037.374 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0037.411 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (14.5 MB, 536 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0042.828 (0) Created themes zip (0) - 10683.4 KB in 7.2 s (1486 KB/s) (sha1: f03d622ea5ec7b82eebb817812aaca24c261247d, sha256: cb3931b0242d2ceceb058efc59dad887b24b9722e10ec7a03f02c417718aea66)
+0042.886 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0042.909 (0) Looking for candidates to backup in: C:\xampp\htdocs\foodblog/wp-content/uploads
+0042.965 (0) finding files: 2019: adding to list (1)
+0042.985 (0) finding files: GeoLite2-Country.mmdb: adding to list (2)
+0043.001 (0) finding files: ur-logs: adding to list (3)
+0043.018 (0) finding files: wc-logs: adding to list (4)
+0043.062 (0) finding files: woocommerce-placeholder-1024x1024.png: adding to list (5)
+0043.102 (0) finding files: woocommerce-placeholder-150x150.png: adding to list (6)
+0043.117 (0) finding files: woocommerce-placeholder-300x300.png: adding to list (7)
+0043.135 (0) finding files: woocommerce-placeholder-768x768.png: adding to list (8)
+0043.160 (0) finding files: woocommerce-placeholder.png: adding to list (9)
+0043.185 (0) finding files: woocommerce_uploads: adding to list (10)
+0043.232 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0043.465 (0) Total entities for the zip file: 6 directories, 100 files (0 skipped as non-modified), 5.7 MB
+0043.555 (0) Zip: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0049.752 (0) Created uploads zip (0) - 4014.2 KB in 6.5 s (618.8 KB/s) (sha1: 3d723418c2d518d823b129eda6991abfd6d933bf, sha256: e207426fa1e3f59f9f5b83c6410a9c190591ea1afcdca408d6dae77a6f3c5476)
+0049.845 (0) Beginning backup of other directories found in the content directory (index: 0)
+0049.878 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0049.911 (0) Looking for candidates to backup in: C:\xampp\htdocs\foodblog/wp-content
+0049.945 (0) finding files: advanced-cache.php: adding to list (1)
+0050.085 (0) finding files: cache: skipping: excluded by options
+0050.384 (0) finding files: index.php: adding to list (2)
+0050.557 (0) finding files: plugins: skipping: this is the plugins directory
+0050.659 (0) finding files: themes: skipping: this is the themes directory
+0050.712 (0) finding files: updraft: skipping: this is the updraft directory
+0050.745 (0) finding files: upgrade: skipping: excluded by options
+0050.763 (0) finding files: uploads: skipping: this is the uploads directory
+0050.778 (0) finding files: wp-cache-config.php: adding to list (3)
+0050.832 (0) Total entities for the zip file: 0 directories, 3 files (0 skipped as non-modified), 0 MB
+0050.963 (0) Created others zip (0) - 2.9 KB in 0.2 s (17.6 KB/s) (sha1: 98329eeb41ba93cc074684df72f2f0198d389e1d, sha256: 6ee34431462eb313e869b84cad64a0658783cf16294c6e47b9eaf33d6cbc6f43)
+0051.120 (0) Saving backup status to database (elements: 8)
+0051.170 (0) Beginning creation of database dump (WordPress DB)
+0051.629 (0) Table dbbs_options: Total expected rows (approximate): 413
+0051.667 (0) Table dbbs_options: Total rows added: 409 in 0.02 seconds
+0051.688 (0) Table dbbs_options: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_options.table.gz - 23.9 KB)
+0051.800 (0) Table dbbs_users: Total expected rows (approximate): 3
+0051.824 (0) Table dbbs_users: Total rows added: 3 in 0.00 seconds
+0051.843 (0) Table dbbs_users: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_users.table.gz - 0.7 KB)
+0051.913 (0) Table dbbs_usermeta: Total expected rows (approximate): 83
+0051.942 (0) Table dbbs_usermeta: Total rows added: 83 in 0.00 seconds
+0051.970 (0) Table dbbs_usermeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_usermeta.table.gz - 1.9 KB)
+0052.696 (0) Table dbbs_commentmeta: Total expected rows (approximate): 0
+0052.846 (0) Table dbbs_commentmeta: Total rows added: 0 in 0.01 seconds
+0053.044 (0) Table dbbs_commentmeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_commentmeta.table.gz - 0.4 KB)
+0053.115 (0) Table dbbs_comments: Total expected rows (approximate): 7
+0053.132 (0) Table dbbs_comments: Total rows added: 8 in 0.01 seconds
+0053.154 (0) Table dbbs_comments: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_comments.table.gz - 1.1 KB)
+0053.486 (0) Table dbbs_links: Total expected rows (approximate): 0
+0053.516 (0) Table dbbs_links: Total rows added: 0 in 0.00 seconds
+0053.535 (0) Table dbbs_links: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_links.table.gz - 0.4 KB)
+0053.659 (0) Table dbbs_postmeta: Total expected rows (approximate): 785
+0053.721 (0) Table dbbs_postmeta: Total rows added: 768 in 0.03 seconds
+0053.747 (0) Table dbbs_postmeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_postmeta.table.gz - 10.8 KB)
+0053.873 (0) Table dbbs_posts: Total expected rows (approximate): 151
+0053.933 (0) Table dbbs_posts: Total rows added: 149 in 0.02 seconds
+0053.975 (0) Table dbbs_posts: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_posts.table.gz - 11.2 KB)
+0054.754 (0) Table dbbs_term_relationships: Total expected rows (approximate): 23
+0054.831 (0) Table dbbs_term_relationships: Total rows added: 22 in 0.01 seconds
+0054.862 (0) Table dbbs_term_relationships: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_term_relationships.table.gz - 0.4 KB)
+0055.011 (0) Table dbbs_term_taxonomy: Total expected rows (approximate): 23
+0055.063 (0) Table dbbs_term_taxonomy: Total rows added: 25 in 0.02 seconds
+0055.088 (0) Table dbbs_term_taxonomy: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_term_taxonomy.table.gz - 0.6 KB)
+0055.195 (0) Table dbbs_termmeta: Total expected rows (approximate): 6
+0055.218 (0) Table dbbs_termmeta: Total rows added: 7 in 0.01 seconds
+0055.251 (0) Table dbbs_termmeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_termmeta.table.gz - 0.5 KB)
+0055.610 (0) Table dbbs_terms: Total expected rows (approximate): 24
+0055.646 (0) Table dbbs_terms: Total rows added: 25 in 0.01 seconds
+0055.688 (0) Table dbbs_terms: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_terms.table.gz - 0.7 KB)
+0055.802 (0) Table dbbs_wc_product_meta_lookup: Total expected rows (approximate): 4
+0055.840 (0) Table dbbs_wc_product_meta_lookup: Total rows added: 4 in 0.01 seconds
+0055.871 (0) Table dbbs_wc_product_meta_lookup: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_product_meta_lookup.table.gz - 0.6 KB)
+0056.249 (0) Table dbbs_woocommerce_order_itemmeta: Total expected rows (approximate): 15
+0056.419 (0) Table dbbs_woocommerce_order_itemmeta: Total rows added: 15 in 0.00 seconds
+0056.552 (0) Table dbbs_woocommerce_order_itemmeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_order_itemmeta.table.gz - 0.6 KB)
+0056.785 (0) Table dbbs_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0056.816 (0) Table dbbs_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0056.843 (0) Table dbbs_woocommerce_payment_tokenmeta: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0056.941 (0) Table dbbs_smush_dir_images: Total expected rows (approximate): 0
+0056.971 (0) Table dbbs_smush_dir_images: Total rows added: 0 in 0.00 seconds
+0056.996 (0) Table dbbs_smush_dir_images: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_smush_dir_images.table.gz - 0.4 KB)
+0057.107 (0) Table dbbs_user_registration_sessions: Total expected rows (approximate): 0
+0057.142 (0) Table dbbs_user_registration_sessions: Total rows added: 0 in 0.00 seconds
+0057.168 (0) Table dbbs_user_registration_sessions: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_user_registration_sessions.table.gz - 0.4 KB)
+0057.346 (0) Table dbbs_wc_download_log: Total expected rows (approximate): 0
+0057.408 (0) Table dbbs_wc_download_log: Total rows added: 0 in 0.00 seconds
+0057.451 (0) Table dbbs_wc_download_log: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_download_log.table.gz - 0.4 KB)
+0057.655 (0) Table dbbs_wc_webhooks: Total expected rows (approximate): 0
+0057.700 (0) Table dbbs_wc_webhooks: Total rows added: 0 in 0.00 seconds
+0057.743 (0) Table dbbs_wc_webhooks: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_webhooks.table.gz - 0.5 KB)
+0058.114 (0) Table dbbs_woocommerce_api_keys: Total expected rows (approximate): 0
+0058.482 (0) Table dbbs_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0058.573 (0) Table dbbs_woocommerce_api_keys: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_api_keys.table.gz - 0.4 KB)
+0059.186 (0) Table dbbs_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0059.305 (0) Table dbbs_woocommerce_attribute_taxonomies: Total rows added: 1 in 0.06 seconds
+0059.336 (0) Table dbbs_woocommerce_attribute_taxonomies: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_attribute_taxonomies.table.gz - 0.4 KB)
+0059.489 (0) Table dbbs_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0059.519 (0) Table dbbs_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0059.570 (0) Table dbbs_woocommerce_downloadable_product_permissions: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0059.682 (0) Table dbbs_woocommerce_log: Total expected rows (approximate): 0
+0059.703 (0) Table dbbs_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0059.746 (0) Table dbbs_woocommerce_log: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_log.table.gz - 0.4 KB)
+0059.995 (0) Table dbbs_woocommerce_order_items: Total expected rows (approximate): 2
+0060.139 (0) Table dbbs_woocommerce_order_items: Total rows added: 2 in 0.00 seconds
+0060.488 (0) Table dbbs_woocommerce_order_items: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_order_items.table.gz - 0.4 KB)
+0060.821 (0) Table dbbs_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0060.854 (0) Table dbbs_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0060.889 (0) Table dbbs_woocommerce_payment_tokens: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0061.029 (0) Table dbbs_woocommerce_sessions: Total expected rows (approximate): 0
+0061.072 (0) Table dbbs_woocommerce_sessions: Total rows added: 0 in 0.00 seconds
+0061.120 (0) Table dbbs_woocommerce_sessions: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_sessions.table.gz - 0.4 KB)
+0061.219 (0) Table dbbs_woocommerce_shipping_zone_locations: Total expected rows (approximate): 1
+0061.254 (0) Table dbbs_woocommerce_shipping_zone_locations: Total rows added: 1 in 0.00 seconds
+0061.289 (0) Table dbbs_woocommerce_shipping_zone_locations: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0061.644 (0) Table dbbs_woocommerce_shipping_zone_methods: Total expected rows (approximate): 2
+0061.673 (0) Table dbbs_woocommerce_shipping_zone_methods: Total rows added: 2 in 0.01 seconds
+0061.727 (0) Table dbbs_woocommerce_shipping_zone_methods: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0061.920 (0) Table dbbs_woocommerce_shipping_zones: Total expected rows (approximate): 0
+0062.304 (0) Table dbbs_woocommerce_shipping_zones: Total rows added: 1 in 0.05 seconds
+0062.622 (0) Table dbbs_woocommerce_shipping_zones: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zones.table.gz - 0.4 KB)
+0062.860 (0) Table dbbs_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0062.902 (0) Table dbbs_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0062.948 (0) Table dbbs_woocommerce_tax_rate_locations: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0063.042 (0) Table dbbs_woocommerce_tax_rates: Total expected rows (approximate): 0
+0063.080 (0) Table dbbs_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0063.098 (0) Table dbbs_woocommerce_tax_rates: finishing file (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_tax_rates.table.gz - 0.4 KB)
+0063.209 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_options.table.gz (1/31): adding to final database dump
+0063.246 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_users.table.gz (2/31): adding to final database dump
+0063.273 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_usermeta.table.gz (3/31): adding to final database dump
+0063.307 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_commentmeta.table.gz (4/31): adding to final database dump
+0063.327 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_comments.table.gz (5/31): adding to final database dump
+0063.427 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_links.table.gz (6/31): adding to final database dump
+0063.448 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_postmeta.table.gz (7/31): adding to final database dump
+0063.475 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_posts.table.gz (8/31): adding to final database dump
+0063.504 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_term_relationships.table.gz (9/31): adding to final database dump
+0063.544 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_term_taxonomy.table.gz (10/31): adding to final database dump
+0063.565 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_termmeta.table.gz (11/31): adding to final database dump
+0063.585 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_terms.table.gz (12/31): adding to final database dump
+0063.618 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_product_meta_lookup.table.gz (13/31): adding to final database dump
+0063.668 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_order_itemmeta.table.gz (14/31): adding to final database dump
+0063.702 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_payment_tokenmeta.table.gz (15/31): adding to final database dump
+0063.725 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_smush_dir_images.table.gz (16/31): adding to final database dump
+0063.743 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_user_registration_sessions.table.gz (17/31): adding to final database dump
+0063.777 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_download_log.table.gz (18/31): adding to final database dump
+0063.810 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_wc_webhooks.table.gz (19/31): adding to final database dump
+0063.844 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_api_keys.table.gz (20/31): adding to final database dump
+0063.865 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_attribute_taxonomies.table.gz (21/31): adding to final database dump
+0063.885 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_downloadable_product_permissions.table.gz (22/31): adding to final database dump
+0063.919 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_log.table.gz (23/31): adding to final database dump
+0063.940 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_order_items.table.gz (24/31): adding to final database dump
+0064.026 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_payment_tokens.table.gz (25/31): adding to final database dump
+0064.264 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_sessions.table.gz (26/31): adding to final database dump
+0064.318 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zone_locations.table.gz (27/31): adding to final database dump
+0064.368 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zone_methods.table.gz (28/31): adding to final database dump
+0064.408 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_shipping_zones.table.gz (29/31): adding to final database dump
+0064.476 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_tax_rate_locations.table.gz (30/31): adding to final database dump
+0064.552 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db-table-dbbs_woocommerce_tax_rates.table.gz (31/31): adding to final database dump
+0064.600 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db.gz: finished writing out complete database file (48 KB)
+0064.785 (0) Total database tables backed up: 31 (backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db.gz, size: 53818, sha256)
+0064.932 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0064.973 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0064.993 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0065.049 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-others.zip: others: This file has not yet been successfully uploaded: will queue
+0065.081 (0) backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db.gz: db: This file has not yet been successfully uploaded: will queue
+0065.101 (0) Saving backup history. Total backup size: 43.1 MB
+0065.143 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0065.234 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0065.268 (0) No remote despatch: user chose no remote backup service
+0065.293 (0) Recording as successfully uploaded: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-plugins.zip
+0065.336 (0) Recording as successfully uploaded: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-themes.zip
+0065.457 (0) Recording as successfully uploaded: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-uploads.zip
+0065.560 (0) Recording as successfully uploaded: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-others.zip
+0065.626 (0) Recording as successfully uploaded: backup_2019-06-12-0649_Food_Blog_6308ebe3abcd-db.gz
+0065.723 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0065.752 (0) Number of backup sets in history: 2; groups (db): 1
+0065.773 (0) Examining (for databases) backup set with group_id=0, nonce=6308ebe3abcd, datestamp=1560322147 (Jun 12 2019 06:49:07)
+0065.793 (0) This backup set is the backup set just made, so will not be deleted.
+0065.793 (0) Examining (for databases) backup set with group_id=0, nonce=3b36b8d0aec9, datestamp=1559215300 (May 30 2019 11:21:40)
+0065.793 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.815 (0) Number of backup sets in history: 2; groups (files): 1
+0065.843 (0) Examining (for files) backup set with nonce=6308ebe3abcd, datestamp=1560322147 (Jun 12 2019 06:49:07)
+0065.843 (0) This backup set is the backup set just made, so will not be deleted.
+0065.868 (0) This backup set is the backup set just made, so will not be deleted.
+0065.868 (0) This backup set is the backup set just made, so will not be deleted.
+0065.868 (0) This backup set is the backup set just made, so will not be deleted.
+0065.868 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.898 (0) Examining (for files) backup set with nonce=3b36b8d0aec9, datestamp=1559215300 (May 30 2019 11:21:40)
+0065.898 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.898 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0066.154 (0) Resume backup (6308ebe3abcd, 0): finish run
+0066.232 (0) Decremented the semaphore (fd) by 1
+0066.276 (0) Semaphore (fd) unlocked
+0066.298 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0066.460 (0) Fetching RSS news feed
+0068.893 (0) Fetched RSS news feed; result is a: SimplePie
+0068.951 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: sarka...
+0070.024 (0) The backup apparently succeeded and is now complete
